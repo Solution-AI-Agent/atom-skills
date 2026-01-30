@@ -1,0 +1,6 @@
+{
+  "name": "atom-skills",
+  "version": "0.1.0",
+  "description": "Atom 사내 Claude Code Skills",
+  "skills": "skills/**/*.md"
+}

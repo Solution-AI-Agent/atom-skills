@@ -1,0 +1,9 @@
+# 기본 리뷰어 (전체)
+* @atom/skills-maintainers
+
+# 도메인별 maintainer (필요시 활성화)
+# /skills/dev/     @atom/dev-team
+# /skills/hr/      @atom/hr-team
+# /skills/finance/ @atom/finance-team
+# /skills/sales/   @atom/sales-team
+# /skills/common/  @atom/skills-maintainers
