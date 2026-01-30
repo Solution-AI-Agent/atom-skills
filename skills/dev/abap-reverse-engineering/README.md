@@ -83,7 +83,7 @@ abap-reverse-engineering/
 ├── SKILL.md              # 메인 스킬 정의
 ├── README.md             # 이 파일
 └── templates/            # 산출물 템플릿
-    └── 00_분석_요약_템플릿.md
+    └── 00_analysis_summary_template.md
 ```
 
 ## 🔧 지원 ABAP 유형

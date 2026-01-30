@@ -1,4 +1,5 @@
 .DS_Store
 *.log
 .env
-docs:ref/
+docs/ref/*
+!docs/ref/.gitkeep

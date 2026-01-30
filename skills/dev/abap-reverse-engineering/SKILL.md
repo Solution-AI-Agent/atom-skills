@@ -691,14 +691,14 @@ ENDIF.
 분석 완료 후 다음 파일들을 생성합니다:
 
 ```
-<program_name>_분석/
-├── 01_비즈니스_로직_명세서.md
-├── 02_데이터_흐름_명세서.md
-├── 03_기능_명세서.md
-├── 04_인터페이스_명세서.md
-├── 05_테이블_구조_명세서.md
-├── 06_호출_관계도.md
-└── 00_분석_요약.md
+<program_name>_analysis/
+├── 01_business_logic_spec.md
+├── 02_data_flow_spec.md
+├── 03_functional_spec.md
+├── 04_interface_spec.md
+├── 05_table_structure_spec.md
+├── 06_call_hierarchy.md
+└── 00_analysis_summary.md
 ```
 
 각 파일은 독립적으로 활용 가능하며, `00_분석_요약.md`에서 전체 개요와 각 문서 링크를 제공합니다.

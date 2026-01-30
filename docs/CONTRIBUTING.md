@@ -4,14 +4,14 @@
 
 1. 적절한 도메인 폴더 선택 (`skills/dev/`, `skills/hr/` 등)
 2. skill 폴더 생성: `skills/<domain>/<skill-name>/`
-3. `skill.md` 작성 ([템플릿 참고](SKILL-TEMPLATE.md))
+3. `SKILL.md` 작성 ([템플릿 참고](SKILL-TEMPLATE.md))
 4. PR 생성
 
 ## 폴더 구조
 
 ```
 skills/<domain>/<skill-name>/
-└── skill.md
+└── SKILL.md
 ```
 
 ## 네이밍 규칙
