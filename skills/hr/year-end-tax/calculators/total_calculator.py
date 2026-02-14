@@ -94,6 +94,21 @@ def calc_year_end_tax(
     Returns:
         dict with all intermediate and final values
     """
+    # Guard: 총급여액은 음수일 수 없음
+    if total_salary <= 0:
+        return {
+            "total_salary": 0, "earned_income_deduction": 0,
+            "earned_income_amount": 0, "personal_deduction": 0,
+            "pension_insurance_deduction": 0, "insurance_income_deduction": 0,
+            "housing_deduction": 0, "card_deduction": 0,
+            "total_income_deduction": 0, "taxable_income": 0,
+            "calculated_tax": 0, "earned_income_tax_credit": 0,
+            "child_tax_credit": 0, "pension_tax_credit": 0,
+            "special_tax_credit": 0, "total_tax_credit": 0,
+            "determined_tax": 0, "prepaid_tax": prepaid_tax,
+            "refund_amount": -prepaid_tax,
+        }
+
     # Step 1: 근로소득공제 및 근로소득금액
     earned_income_deduction = calc_earned_income_deduction(total_salary)
     earned_income_amount = calc_earned_income_amount(total_salary)

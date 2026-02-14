@@ -5,8 +5,6 @@ TDD RED phase: Write tests first, then implement.
 All amounts in KRW (원).
 """
 
-import pytest
-
 from income_tax import (
     calc_earned_income_deduction,
     calc_earned_income_amount,

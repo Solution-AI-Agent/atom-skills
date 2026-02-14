@@ -3,8 +3,6 @@
 
 TDD: RED phase - 테스트를 먼저 작성합니다.
 """
-import pytest
-
 from card_deduction import (
     calc_card_deduction,
 )

@@ -19,6 +19,7 @@ from constants import (
     EARNED_INCOME_TAX_CREDIT_BASE,
     EARNED_INCOME_TAX_CREDIT_RATE_HIGH,
     EARNED_INCOME_TAX_CREDIT_LIMITS,
+    EARNED_INCOME_TAX_CREDIT_MIN_LIMIT,
 )
 
 
@@ -143,4 +144,4 @@ def _calc_credit_limit(total_salary: int) -> int:
             return max(decreased, min_limit)
         prev_upper = upper
 
-    return 200_000
+    return EARNED_INCOME_TAX_CREDIT_MIN_LIMIT

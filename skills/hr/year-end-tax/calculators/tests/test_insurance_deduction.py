@@ -3,8 +3,6 @@
 
 TDD: RED phase - 테스트를 먼저 작성합니다.
 """
-import pytest
-
 from insurance_deduction import (
     calc_insurance_income_deduction,
     calc_insurance_tax_credit,

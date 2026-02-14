@@ -51,6 +51,7 @@ EARNED_INCOME_TAX_CREDIT_LIMITS = [
     (120_000_000, 660_000, 0.5, 500_000),       # 7,000만~1.2억원
     (float('inf'), 500_000, 0.5, 200_000),      # 1.2억원 초과
 ]
+EARNED_INCOME_TAX_CREDIT_MIN_LIMIT = 200_000  # 세액공제 최저한도 (1.2억 초과) [p.162]
 
 # =============================================================================
 # 4. 인적공제 [p.95-104]
@@ -136,6 +137,7 @@ DONATION_POLITICAL_THRESHOLD_1 = 100_000  # 10만원 기준
 DONATION_POLITICAL_THRESHOLD_2 = 30_000_000  # 3천만원 기준
 
 # 고향사랑기부금 공제율 [p.187]
+DONATION_HOMETOWN_THRESHOLD = 100_000  # 10만원 기준
 DONATION_HOMETOWN_RATE_UNDER_100K = 100 / 110  # 10만원 이하: 100/110
 DONATION_HOMETOWN_RATE_OVER_100K = 0.15  # 10만원 초과: 15%
 DONATION_HOMETOWN_LIMIT = 20_000_000  # 개인별 연간 상한 2,000만원 [p.189]

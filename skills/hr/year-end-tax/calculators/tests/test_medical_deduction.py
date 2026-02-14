@@ -3,8 +3,6 @@
 
 TDD: RED phase - 테스트를 먼저 작성합니다.
 """
-import pytest
-
 from medical_deduction import (
     calc_medical_tax_credit,
 )

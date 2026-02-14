@@ -10,6 +10,7 @@ from constants import (
     DONATION_POLITICAL_RATE_OVER_30M,
     DONATION_POLITICAL_THRESHOLD_1,
     DONATION_POLITICAL_THRESHOLD_2,
+    DONATION_HOMETOWN_THRESHOLD,
     DONATION_HOMETOWN_RATE_UNDER_100K,
     DONATION_HOMETOWN_RATE_OVER_100K,
     DONATION_SPECIAL_RATE_UNDER_10M,
@@ -74,11 +75,11 @@ def _calc_hometown_credit(amount: int) -> int:
 
     credit = 0
 
-    tier_1 = min(amount, DONATION_POLITICAL_THRESHOLD_1)
+    tier_1 = min(amount, DONATION_HOMETOWN_THRESHOLD)
     credit += tier_1 * DONATION_HOMETOWN_RATE_UNDER_100K
 
-    if amount > DONATION_POLITICAL_THRESHOLD_1:
-        tier_2 = amount - DONATION_POLITICAL_THRESHOLD_1
+    if amount > DONATION_HOMETOWN_THRESHOLD:
+        tier_2 = amount - DONATION_HOMETOWN_THRESHOLD
         credit += tier_2 * DONATION_HOMETOWN_RATE_OVER_100K
 
     return int(credit)

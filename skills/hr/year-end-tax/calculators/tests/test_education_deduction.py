@@ -3,8 +3,6 @@
 
 TDD: RED phase - 테스트를 먼저 작성합니다.
 """
-import pytest
-
 from education_deduction import (
     calc_education_tax_credit,
 )

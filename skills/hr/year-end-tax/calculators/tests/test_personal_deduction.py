@@ -5,8 +5,6 @@ TDD RED phase: Write tests first, then implement.
 All amounts in KRW (원).
 """
 
-import pytest
-
 from personal_deduction import (
     calc_basic_personal_deduction,
     calc_additional_deduction,
