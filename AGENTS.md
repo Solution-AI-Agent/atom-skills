@@ -63,3 +63,13 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
+## 5. Skill Install Flow (atom-skills)
+
+When a user asks to install this skill repository:
+- First open `README.md` and present the install options briefly.
+- Confirm whether this is a fresh install or update.
+- After user confirmation, run only one command:
+  - Fresh install: `git clone https://github.com/Solution-AI-Agent/atom-skills.git ~/.claude/plugins/atom-skills`
+  - Update existing install: `git -C ~/.claude/plugins/atom-skills pull`
+- Verify with: `test -f ~/.claude/plugins/atom-skills/README.md && echo "installed"`
