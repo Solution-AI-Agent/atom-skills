@@ -10,32 +10,6 @@ Atom 사내 Claude Code Skills 저장소
 git clone https://github.com/Solution-AI-Agent/atom-skills.git ~/.claude/plugins/atom-skills
 ```
 
-### 에이전트 대화형 설치 절차
-
-사용자가 설치를 요청하면 에이전트는 아래 순서로 진행합니다.
-
-1. `README.md`의 설치 섹션을 먼저 사용자에게 보여주고 설치 방식을 확인합니다.
-2. 신규 설치인지 기존 업데이트인지 확인합니다.
-3. 사용자 확인 후 아래 명령 중 하나를 실행합니다.
-
-신규 설치:
-
-```bash
-git clone https://github.com/Solution-AI-Agent/atom-skills.git ~/.claude/plugins/atom-skills
-```
-
-기존 설치 업데이트:
-
-```bash
-git -C ~/.claude/plugins/atom-skills pull
-```
-
-설치 검증:
-
-```bash
-test -f ~/.claude/plugins/atom-skills/README.md && echo "installed"
-```
-
 ## 스킬 목록
 
 ### dev (개발)
